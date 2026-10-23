@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе — Эко-активист</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header_head">
+        <h1>Рустам Голицинский</h1>
+    <button type="button" id="theme-toggle" class="header__btn">
+        Тёмная тема
+    </button>
+    </div>
+</header>
+
+<div class="container">
+
+    <main>
+
+        <section class="about">
+            <h2>Обо мне</h2>
+
+            <img
+                src="./image/avatar.jpg"
+                alt="Аватар эко-активиста"
+                width="180"
+                height="180"
+            >
+
+            <p>
+                Я интересуюсь экологией и современными технологиями,
+                которые помогают делать окружающий мир чище.
+                Мне интересно участвовать в экологических проектах,
+                анализировать данные и организовывать полезные инициативы.
+            </p>
+        </section>
+
+        <section class="habits-controls">
+            <h2>Трекер эко-привычек</h2>
+ 
+            <div class="controls">
+                <input
+                    type="text"
+                    id="habit-input"
+                    placeholder="Название новой привычки"
+                    aria-label="Название новой привычки"
+                >
+                <button type="button" id="add-habit">Добавить привычку</button>
+            </div>
+ 
+            <div class="controls">
+                <button type="button" id="reset-progress">Сбросить прогресс</button>
+                <button type="button" id="toggle-habits">Скрыть привычки</button>
+            </div>
+ 
+            <p id="status" class="status" role="status" aria-live="polite"></p>
+        </section>
+ 
+        <section id="habits-section">
+            <h2>Мои привычки</h2>
+            <div id="habits-container"></div>
+        </section>
+
+        <section>
+            <h2>Навыки</h2>
+
+            <ul class="skills">
+                <li>Проведение исследований</li>
+                <li>Работа с данными и анализ информации</li>
+                <li>Организация экологических мероприятий</li>
+                <li>Работа в команде</li>
+                <li>Создание информационных материалов</li>
+                <li>Планирование экологических проектов</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Проекты</h2>
+
+            <ol class="projects">
+                <li>
+                    Организация акции по уборке парков и общественных территорий.
+                </li>
+
+                <li>
+                    Проект по раздельному сбору пластиковых,
+                    бумажных и стеклянных отходов.
+                </li>
+
+                <li>
+                    Посадка деревьев и озеленение городской территории.
+                </li>
+
+                <li>
+                    Создание информационного сайта
+                    о способах уменьшения количества бытовых отходов.
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Обратная связь</h2>
+
+            <form action="#" method="post">
+
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Введите ваше имя"
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Введите ваш Email"
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Введите ваше сообщение"
+                ></textarea>
+
+                <button type="submit">
+                    Отправить
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Мой эко-принцип</h2>
+
+        <p>
+            ♻️ <strong>Zero Waste</strong>
+        </p>
+
+        <p>
+            Я стараюсь уменьшать количество отходов,
+            повторно использовать вещи и избегать
+            ненужного одноразового пластика.
+        </p>
+
+        <h3>Любимые эко-привычки</h3>
+
+        <ul class="habits__list">
+            <li>Использовать многоразовые бутылки</li>
+            <li>Сортировать мусор</li>
+            <li>Экономить воду</li>
+            <li>Использовать многоразовые сумки</li>
+        </ul>
+    </aside>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Рустам Голицинский. Все права защищены.</p>
+</footer>
+<script src="./main.js" defer></script>
+</body>
+</html>
